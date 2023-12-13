@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <audio src="music.mp3" controls autoplay loop style="display: none;"></audio>
+    <style>
+        body {    
+            /* Gradient for modern browsers */
+            background-image: linear-gradient(to bottom,  #E5D4FF, #B6BBC4,#edddf9, #161A30);
+            /* You can adjust the angle and positioning as needed */
+        }
+        #about{
+            background-color: #F7EFE5;
+            color: black;
+        }
+        #education{
+            background-color: #FFFBF5;
+        }
+        #experience{
+            background-color: #DCBFFF;
+        }
+        #projects{
+            background-color: #F1EAFF;
+        }
+        #tools{
+            background-color: #fefcff;
+        }
+        h1,h2,h3,h4,h5,h6{
+            color: #5a18ad;
+        }
+        .a{
+            position: relative;
+            top: 0vh;
+            left: -10vh;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+        }
+        .s {
+            position: absolute;
+            top: 25vh;
+            left: -10vh;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+        }
+
+        .img-transition {
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+        
+        .img-transition.active {
+            opacity: 1;
+        }
+
+        /* Additional styling */
+        .text-overlay {
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            font-size: 24px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg transparent">
+            <div class="container">
+                <!-- left -->
+                <a class="navbar-brand" href="#">Blasco</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- right -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#education">Education</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#experience">Experience</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#tools">Tools</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+  <!-- Home Section -->
+    <section id="home">
+        <div class="container row mx-5">
+            <div class="col-md-8 my-5">
+                <h1 style="color: #5a18ad;">Hello, my name is Nasu.</h1>
+                <hr>
+                <p class="w-5">Just a regular student from Bulacan state university, who loves explore new things but not stick on it. I belive that <i> dreaming is not accurate to achieve! so do not dreaming do things accordingly from the moment lifes will do the same after.</i></p>
+                <img src="homebg.gif" style="width: 100%; height: 500px">
+            </div>
+            <div class="col-md-4">
+                <img src="home-r.png" class="s w-100 h-100">
+            </div>
+        </div>
+</section>
+        <!-- About Section -->
+        <section id="about" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">About Me</h2>
+                <div class="row d-flex justify-content-center">
+                    <div class="col-md-6">
+                        <h3>Is there a me?</h3>
+                        <img src="me.png" class="a mx-5">
+                    </div>
+                    <div class="col-md-6">
+                        <p class="lh-lg">
+                            <br><br>
+                            Every person's the same in this big ol' scene,
+                            Like life and death, it's something routine.
+                            What about me, amid this vast sea of faces,
+                            A soul amidst billions, tracing life's laces,
+                            <br>
+                            I'm just a regular guy, nothing rare,
+                            Just a piece of stories and memories to share.
+                            From the hum of existence, I seek my own tone,
+                            In the shared symphony, my uniqueness is sown,
+                            In this crowd where everyone's a star,
+                            I wonder where exactly 'me' sits, by far?
+                            <hr>
+                        </p>
+                        <p class="lh-lg">
+                            Hello! this about me section is nothing interesting. me here, Loves to do anything new, curious about something new, motivates about something new <br> anything new is interesting. I think I want to learn anything in tech and practice coding because I need to.
+                            I can't sing nor dance I love cooking fried egg because I can,  I love playing games but I don't want because time cannot stop me. I also spend some time reading but I prefer to watch it. 
+                            I want to explore world and dive into something. I believe in the power of something maybe it's something wonderful. When I'm not [Working/Practicing], you'll find me [Hobbies/Activities], exploring around anything. I hope you learn something about me feel free to get connected, I'll put the contacts below 
+                            Feel free to say HI! <br>..<br>[upgrade plan to genererate more].
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="education" class="py-5">
+            <h2 class="text-center mb-4">Education</h2>
+            <div class="container row mx-5  px-5">
+                <!-- left -->
+                <div class="col-md-6 mb-5">
+                    <h3>Bulacan State University</h3>
+                    <p>City of Malolos Bulacan, Philippines</p>
+                    <p>2021 - present</p>
+                    <ul>
+                        <li>
+                            Bachelor of Science in information technology
+                            <br> 
+                            web and mobile developer specialization
+                        </li>
+                    </ul>
+                </div>
+                <!-- right -->
+                <div class="col-md-6"><img src="bulsu.jpg" class="w-50 img-transition"></div>
+
+                 <!-- left -->
+                 <div class="col-md-6 mb-5">
+                    <h3>ACLC College of Malolos</h3>
+                    <p>City of Malolos Bulacan, Philippines</p>
+                    <p>2019 - 2021</p>
+                    <ul>
+                        <li>
+                            ICT - Computer Programming
+                            <br> 
+                            Techvoc Track | With Honors 93% avg
+                        </li>
+                    </ul>
+                </div>
+                <!-- right -->
+                <div class="col-md-6"><img src="aclc.jpg" class="w-50 img-transition"></div>
+
+                    <!-- left -->
+                    <div class="col-md-6 mb-5">
+                    <h3>Dr. Felipe De Jesus National High School</h3>
+                    <p>Plaridel, Bulacan, Philippines</p>
+                    <p>2016 - 2019</p>
+                    <ul>
+                        <li>
+                            nothing to talk about
+                        </li>
+                    </ul>
+                </div>
+                <!-- right -->
+                
+            <div class="col-md-6"><img src="dfdjnhs.png" class="w-50 img-transition"></div>
+
+                <!-- left -->
+                <div class="col-md-6 mb-5">
+                <h3>Santisima Trinidad Elementary School</h3>
+                <p>City of Malolos Bulacan, Philippines</p>
+                <p>2010 - 2016</p>
+                <ul>
+                    <li>
+                        this is where i'm started 
+                    </li>
+                </ul>
+            </div>
+            <!-- right -->
+            <div class="col-md-6"><img src="stes.jpg" class="w-50 img-transition"></div>
+
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="py-5">
+            <div class="container py-5">
+                <div class="row">
+                  <div class="col-md-6">
+                    <h2>Work Experience</h2>
+                    <p><i>just a template muna kase ala pang work experience hehe</i></p>
+                    <div class="experience-item mb-4">
+                      <h3>Professional Tambay," "Chief of Chill Officer," | "Master of Nothing".</h3>
+                      <p class="text-muted"> blk 143 lot 69 kanto namen street</p>
+                      <p class="font-italic">2002 ~ Present</p>
+                      <ul>
+                        <p>Job Description</p>
+                        <li>kumain matulog gala minsan and uwi sa bahay bago magdilim repeat</li>
+                        <li>dapat magsaing mga alas sais kase pag ndi galit mama okay?</li>
+                      </ul>
+                    </div>
+              
+                    <!-- Add more experience items as needed -->
+                    
+                  </div>
+              
+                  <div class="col-md-6">
+                    <h2>Experiences</h2>
+                    <div class="education-item mb-4">
+                      <h3>Job Title</h3>
+                      <p class="text-muted">Company Name</p>
+                      <p class="font-italic">Dates Attended</p>
+                      <ul>
+                        <li>Relevant coursework or achievements</li>
+                        <li>Any notable accomplishments</li>
+                      </ul>
+                    </div>
+              
+                    <!-- Add more education items as needed -->
+                    
+                  </div>
+                </div>
+            </div>
+              
+        </section>
+
+
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-4">Projects</h2>
+                <p class="text-center" >Projects that I list since begun from first year to third year, from console to GUI</p>
+                <div class="card mb-3">
+                    <img src="svg.png" class="card-img-top" alt="Project Image">
+                    <div class="card-body">
+                        <h5 class="card-title">SVG ft FIGMA</h5>
+                        <p class="card-text">back when I was in Grade12. html and css is my primary tool. some how I managed to make a shortcut on designing a pages because it takes so much time and effort. So when I met Figma <br>
+                        Im not actually coding svg, if I say so it's a lie.</p>
+                        <a href="https://johnasblasco.github.io/svg/" class="btn btn-primary">View Project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <h2 class="text-center mb-4">C++ Console</h2>
+                <p class="text-center" >Projects that I list since begun from first year to third year, from console to GUI</p>
+                <div class="card mb-3">
+                    <img src="lotto.jpg" class="card-img-top" alt="Project Image">
+                    <div class="card-body">
+                        <h5 class="card-title">LOTTO</h5>
+                        <p class="card-text">First year project. when I built a c++ system without libraries which connected to linkedlist. it is a simple Lotto game using linked list by scratch <br> 
+                            well it's just a nodes of ticket that if you entered a number, system also generates a random number that if both of your number is same then you won. boring and simple as that</p>
+                        <a href="https://github.com/johnasblasco/MISC" class="btn btn-primary">View Project</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="container">
+                <h2 class="text-center mb-4">There's a lot of GUI projects in JAva</h2>
+                <p class="text-center" >that I cannot retrieve | That time is good, where I understand Graphical User Interface from frame to panel buttons layouts and other views etc. <br> in some point I understand a structure to make a UI not just the front but back of its back. to bone and it's shell. This is the first time that I code on Clickable interfaces not just a console that black and white interface like CMD but speaking of java I also have android projects that will posted on github</p>
+                <div class="card mb-3">
+                    <img src="java.png" class="card-img-top" alt="Project Image">
+                    <div class="card-body">
+                        <h5 class="card-title">JAVA</h5>
+                        <p class="card-text">Second Year is full of OOP / GUI java project I have done so many of it but sadly I cannot retrieve it now. One of the reason is when my Laptop got an issue and I think the only solution is to reset it. | Click View Projects. I stored One of it. it's called ATM. To run it we need DataBase and IDE (Netbeans is recommended) | can't run ask chatgpt <3</p>
+                        <a href="https://drive.google.com/drive/u/0/folders/13LWsHWxbNrKzssB69CM1B0oF_cXznxAj?fbclid=IwAR3wKcqtYUw0U2LNl3dzPH6vuu93DYjDPJ-XYMW9iN9NkveaTDUgdjCfVVE" class="btn btn-primary">View Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <h2 class="text-center mb-4">FULLSTACK WEBSITE (FRONTEND AND BACKEND)</h2>
+                <p class="text-center" >Projects that I list since begun from first year to third year, from console to GUI</p>
+                <div class="card mb-3">
+                    <img src="haeris.png" class="card-img-top" alt="Project Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Website Project</h5>
+                        <p class="card-text">Preparation before Capstone| a grasp a new knowledge on basic backend where I understand routing and handling request the process and it's database. the basic backend process of this project is the form method. information like the type of request GET and POST . Backend server receives the request. By using PHP and SQL combine to communicate the request. where PHP is the biggest effort on the back because of its primary function as a server-side scripting language because he processing form data, interacting with databases, handling user sessions, and more. in short PHP is the midman of front and back </p>
+                        <a href="https://github.com/johnasblasco/SAD-main" class="btn btn-primary">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tools Section -->
+        <section id="tools" class="">
+            <div align="center" class="mb-5 pt-5">
+                <img
+                    height="150"
+                    src="me.gif"
+                />
+            </div>
+        
+            <div align="center" class="mb-5">
+                <a href="https://www.linkedin.com/in/johnasblasco/"><img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="linkedin logo"  /></a>
+                <a href="https://www.facebook.com/J.blasco20"><img src="https://img.shields.io/static/v1?message=Facebook&logo=facebook&label=&color=1877F2&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="facebook logo"  /></a>
+                <a href="https://discordapp.com/users/johnasblasco"><img src="https://img.shields.io/static/v1?message=Discord&logo=discord&label=&color=7289DA&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="discord logo"  /></a>
+            </div>
+        
+            <div align="center" class="mb-5">
+                <img src="https://visitor-badge.laobi.icu/badge?page_id=maurodesouza.maurodesouza&" />
+            </div>
+    
+        
+            <h3 align="center" class="mb-3">🛠 Language and tools</h3>
+        
+            <div align="center" class="mb-5">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="40" alt="html5 logo"  />
+                    <img width="12" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="40" alt="css3 logo"  />
+                    <img width="12" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" alt="javascript logo"  />
+                    <img width="12" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" height="40" alt="java logo"  />
+                    <img width="12" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" height="40" alt="bootstrap logo"  />
+                    <img width="12" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" height="40" alt="mysql logo"  />
+                    <img width="12" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" height="40" alt="linux logo"  />
+                    <img width="12" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="40" alt="git logo"  />
+                    <img width="12" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" height="40" alt="php logo"  />
+                    <img width="12" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="40" alt="python logo"  />
+                    <img width="12" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ubuntu/ubuntu-plain.svg" height="40" alt="ubuntu logo"  />
+                </div>
+        
+            <h3 align="center">🔥 My Stats :</h3>
+        
+            <div align="center">
+                <img src="https://streak-stats.demolab.com?user=maurodesouza&locale=en&mode=daily&theme=dark&hide_border=false&border_radius=5&order=3" height="220" alt="streak graph" />
+                <br>
+                <br>
+            </div>
+        </section>
+        
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-5 text-white">
+            <h2 class="text-center mb-4">Contact Me</h2>
+            <div class="container row mx-5">
+
+                <div class="col-md-6 mx-5">
+                    <h5>Contacts</h5>
+                    <div class="d-flex align-items-start">
+                        <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                          <a class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Phone</a>
+                          <a class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Address</a>
+                          <a class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Media</a>
+                          <a class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Donate</a>
+                        </div>
+                        <div class="tab-content" id="v-pills-tabContent">
+                          <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">You can contact my primary numbers I use.  IF anyone have concerns about this website please message me <br> Globe : +63 995 368 1668 <br> TNT : +63 985 926 8288</div>
+                          <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab"> I live on Malolos Bulacan. brgy STMA.TRINIDAD If you see me, surprisingly because I always lock myself in my room. I don't have many friends there Im also not want to have.</div>
+                          <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab"><h6><a href="https://www.facebook.com/J.blasco20/">FACEBOOK</a></h6> I always use this platform for my primary social media and I'm stick to it. I created my account there since 2012 my brother created my account cause im just 10 year old boy. The primary reason is I want to play dragon city</div>
+                          <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">hello penge barya to <h6><a href="https://www.buymeacoffee.com/johnasblasco">buy me a coffee</a></h6></div>
+                        </div>
+                      </div>
+                    
+                </div>
+                <div class="col-md-4">
+                    <h5>Social Links</h5>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><a href="https://github.com/johnasblasco">Github</a></li>
+                        <li class="list-group-item"><a href="https://www.linkedin.com/in/johnasblasco/">linkedin</a></li>
+                        <li class="list-group-item"><a href="https://www.sololearn.com/en/profile/12669986">Sololearn</a></li>
+                        <li class="list-group-item"><a href="https://edabit.com/user/NaZCu8sGfknsk4PX7?fbclid=IwAR3pv35BG_zBW--PYkL2NTnVdjRo9Fn5xKWk8dD4vy9gV1skyOVGixM-j0U">Edabit</a></li>
+                      </ul>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            &copy; 2023 All Rights Reserved by only creator johnasblasco
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Function to check if an element is in the viewport
+function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+
+// Function to handle adding the transition class to images
+function handleImageTransition() {
+    const images = document.querySelectorAll('.img-transition');
+
+    images.forEach(image => {
+        if (isInViewport(image)) {
+            image.classList.add('active');
+        }
+    });
+}
+
+// Event listener for scrolling
+window.addEventListener('scroll', () => {
+    handleImageTransition();
+});
+
+// Initial check when the page loads
+window.addEventListener('load', () => {
+    handleImageTransition();
+});
+
+    </script>
+</body>
+
+</html>
